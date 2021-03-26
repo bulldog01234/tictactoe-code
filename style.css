@@ -28,7 +28,7 @@
   .cell {
     width: var(--cell-size);
     height: var(--cell-size);
-    border: 1px solid black;
+    border: 10px solid cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,13 +64,13 @@
   .cell.x::before,
   .cell.x::after,
   .cell.circle::before {
-    background-color: black;
+    background-color: white;
   }
   
   .board.x .cell:not(.x):not(.circle):hover::before,
   .board.x .cell:not(.x):not(.circle):hover::after,
   .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: lightgrey;
+    background-color: black;
   }
   
   .cell.x::before,
